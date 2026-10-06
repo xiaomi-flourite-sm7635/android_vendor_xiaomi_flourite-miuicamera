@@ -1,0 +1,302 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/xiaomi/flourite-miuicamera",
+        "vendor/xiaomi/flourite",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libutils",
+                "libvndksupport",
+                "libandroid",
+                "libandroid_runtime",
+                "libbase",
+                "libmedia_jni_utils",
+                "libnativehelper",
+                "libnativewindow",
+                "libui",
+                "android.hidl.token@1.0-utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libutils",
+                "libvndksupport",
+                "libxml2",
+                "libandroid",
+                "libmedia_jni_utils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmicampostproc_client",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libmicampostproc_client.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv2",
+                "libfmq",
+                "libgui",
+                "libui",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libmedia_jni_utils",
+                "libnativehelper",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.xiaomi.hardware.campostproc@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.campostproc@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.blackbox-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.misys.common-V3-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.misys.common-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.misys.core-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.misys.common.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.common.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "hypsys_vendor",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hypsys_vendor",
+            ],
+            shared_libs: [
+                "libmisight",
+                "libcutils",
+                "libcrypto",
+                "libz",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "libjsoncpp",
+                "vendor.xiaomi.hardware.misys.core-V1-ndk",
+                "vendor.xiaomi.hardware.misys.common-V3-ndk",
+                "vendor.xiaomi.hardware.blackbox-V1-ndk",
+                "xiaomi.system.hypsys.common-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+install_symlink {
+    name: "system_priv-app_MiuiCamera_lib_arm64_libcamera_algoup_jni_xiaomi_so",
+    installed_location: "priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so",
+    symlink_target: "/system/lib64/libcamera_algoup_jni.xiaomi.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MiuiCamera_lib_arm64_libcamera_mianode_jni_xiaomi_so",
+    installed_location: "priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so",
+    symlink_target: "/system/lib64/libcamera_mianode_jni.xiaomi.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MiuiCamera_lib_arm64_libmicampostproc_client_so",
+    installed_location: "priv-app/MiuiCamera/lib/arm64/libmicampostproc_client.so",
+    symlink_target: "/system/lib64/libmicampostproc_client.so",
+}
+
+genrule {
+    name: "MiuiCamera-flourite-apk",
+    srcs: [
+        "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part00",
+        "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part01",
+        "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part02",
+    ],
+    out: ["MiuiCamera.apk"],
+    cmd: "cat $(in) > $(out)",
+}
